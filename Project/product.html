@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Product</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <script src="js/scripts.js"></script>
+    
+    <script src="js/main.js"></script>
+    
+    <script>
+    let tovar = {
+        id: 4,
+        name: 'Велосипед',
+        price: 100500,
+        qty: 1
+    }
+    </script>
+
+</head>
+<body>
+    <header>
+        <section>
+            <p class="container">VeloSun твой магазин велосипедов.Подари себе свободу движения!</p>
+        </section>
+        
+        <section class="mainhead">
+            <div class="container">
+                <a href="index.html" class="icon logo"></a>
+                <div class="searschform"></div>
+                <a href="#" class="icon login"></a>
+                <a href="order.html" class="icon order"></a>
+            </div>
+        </section>
+        
+        <section>
+            <nav class="container">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="product.html" class="current">Товар</a>
+                <a href="order.html">Корзина</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+        </section>
+    </header>
+    
+    <main>
+        <section class="product">
+            <div class="container">
+                <aside class="catmenu">
+                    <div class="opener">КАТАЛОГ <span class="icon cat"></span></div>
+                    <nav class="accordeon">
+                        <ul>
+                            <li class="sub">
+                                <a href="catalog.html">Велосипеды</a>
+                                <ul>
+                                    <li><a href="product.html">Горные велосипеды</a></li>
+                                    <li><a href="#">Женские велосипеды</a></li>
+                                    <li><a href="#">Двухподвесы</a></li>
+                                    <li><a href="#">Комфортные велосипеды</a></li>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub">
+                                <a href="#">Аксессуары</a>
+                                <ul>
+                                    <li><a href="#">Велосипедные сумки</a></li>
+                                    <li><a href="#">Фонари</a></li>
+                                    <li><a href="#">Насосы</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Запчасти</a>
+                            </li>
+                            <li>
+                                <a href="#">Экипировка</a>
+                            </li>
+                            <li class="sub">
+                                <a href="#">Инстументы</a>
+                                <ul>
+                                    <li><a href="#">Товары для ухода за велосипедом</a></li>
+                                    <li><a href="#">Смазки для велосипеда</a></li>
+                                    <li><a href="#">Наборы для прокачки тормозов</a></li>
+                                </ul>
+                            </li>
+                    </nav>
+                </aside>
+                
+                <article>
+                    <h1>Карточка товара</h1>
+                    
+                    <div class="imagedesk">
+                        <div class="bigimage">
+                            <img src="images/1.jpg" alt="Велосипед">
+                        </div>
+                        <div class="mini">
+                            <div>
+                                <div class="rail">
+                                    <img src="images/mini_1.jpg" alt="Велосипед">
+                                    <img src="images/mini_2.jpg" alt="Велосипед">
+                                    <img src="images/mini_4.jpg" alt="Велосипед">
+                                    <img src="images/mini_5.jpg" alt="книга">
+                                </div>
+                            </div>
+                            <span class="gal_left">&#8249;</span>
+                            <span class="gal_right disabled">&#8250;</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pricedesk">
+                        <p class="big">Горный велосипед Trek Roscoe 8 27.5 (2021)</p>
+                        <p class="price">98 000 &#8381;</p>
+                        <button type="button" class="buy" onclick="addTovar(tovar)">Купить</button>
+                    </div>
+                    
+                    <div class="descriptions"></div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section>
+            <div class="container">
+                <nav class="footermenu">
+                    <ul>
+                        <li class="big">Компания</li>
+                        <li>О компании</li>
+                        <li>Магазины и пункты самовывоза</li>
+                        <li>Вакансии</li>
+                        <li>Сертификаты</li>
+                    </ul>
+                    <ul>
+                        <li class="big">Покупателям</li>
+                        <li>Каталог</li>
+                        <li>Доставка</li>
+                        <li>Гарантия и ремонт</li>
+                        <li>Политика конфиденциальности</li>
+                    </ul>
+                    <ul>
+                        <li class="big">Мы в социальных сетях</li>
+                        <li>Вконтакте</li>
+                        <li>Одноклассники</li>
+                        <li>You Tube</li>
+                    </ul>
+
+                    <!-- <ul>
+                        <li class="big">HEADER</li>
+                        <li>point</li>
+                        <li>point</li>
+                        <li>point</li>
+                        <li>point</li>
+                    </ul> -->
+                </nav>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <p class="copy">&copy; VeloSun, Твой интернет-магазин 2022.</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
